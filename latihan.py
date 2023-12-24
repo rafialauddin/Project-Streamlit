@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 # Membaca file CSV
-orders_df = pd.read_csv('F:\Dicoding\Data Science\Project\Project-Streamlit\E-Commerce Public Dataset\orders_dataset.csv')
-order_items_df = pd.read_csv('F:\Dicoding\Data Science\Project\Project-Streamlit\E-Commerce Public Dataset\order_items_dataset.csv')
-products_df = pd.read_csv('F:\Dicoding\Data Science\Project\Project-Streamlit\E-Commerce Public Dataset\products_dataset.csv')
-products_name_df = pd.read_csv('F:\Dicoding\Data Science\Project\Project-Streamlit\E-Commerce Public Dataset\products_dataset.csv')
-products_name_english_df = pd.read_csv('F:\Dicoding\Data Science\Project\Project-Streamlit\E-Commerce Public Dataset\product_category_name_translation.csv')
+orders_df = pd.read_csv('https://github.com/rafialauddin/Project-Streamlit/blob/main/E-Commerce%20Public%20Dataset/orders_dataset.csv')
+order_items_df = pd.read_csv('https://github.com/rafialauddin/Project-Streamlit/blob/main/E-Commerce%20Public%20Dataset/order_items_dataset.csv')
+products_df = pd.read_csv('https://github.com/rafialauddin/Project-Streamlit/blob/main/E-Commerce%20Public%20Dataset/products_dataset.csv')
+products_name_df = pd.read_csv('https://github.com/rafialauddin/Project-Streamlit/blob/main/E-Commerce%20Public%20Dataset/products_dataset.csv')
+products_name_english_df = pd.read_csv('https://github.com/rafialauddin/Project-Streamlit/blob/main/E-Commerce%20Public%20Dataset/product_category_name_translation.csv')
 
 # Melakukan inner join antara orders_df dan products_df berdasarkan kolom 'product_id'
 new_order_df = pd.merge(orders_df, 
